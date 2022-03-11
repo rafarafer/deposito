@@ -32,4 +32,13 @@ class DepositoCombustibleTest {
 		// System.out.print("The tank with capacity " + tank.getDepositoMax() + " liters has been created. ");
 	    //System.out.println(" Its initial fuel level is  " + tank.getDepositoNivel() + " liters.");
 	}
+	@Test
+	void testGetDepositoMax() {		
+	DepositoCombustible tank = new DepositoCombustible(30.0,0.0);
+	assertEquals(30.0, tank.getDepositoMax());
+	// System.out.print("The tank with capacity " + tank.getDepositoMax() + " liters has been created. ");
+    //System.out.println(" Its initial fuel level is  " + tank.getDepositoNivel() + " liters.");
+	}
+
+
 }
